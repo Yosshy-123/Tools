@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 :root {
 	--bg-1: #0f172a;
 	--bg-2: #0b1220;
@@ -56,13 +58,14 @@ h1 {
 }
 
 .tools a {
-	margin: 0;
-	padding: 28px 20px;
-	height: 100%;
+	text-decoration: none;
+	outline: none;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	padding: 28px 20px;
+	height: 100%;
 	font-size: 1.15rem;
 	font-weight: 600;
 	color: var(--text);
@@ -73,6 +76,7 @@ h1 {
 	backdrop-filter: blur(6px);
 	-webkit-backdrop-filter: blur(6px);
 	border: 1px solid rgba(255, 255, 255, 0.03);
+	text-align: center;
 }
 
 .tools a:hover,
@@ -119,7 +123,6 @@ h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
 	.tools a,
 	.tools a:hover {
 		transition: none;
