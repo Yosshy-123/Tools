@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Notes</h1>
+    </header>
+
+    <div class="app">
+      <aside class="panel">
+        <div class="controls">
+          <button id="newBtn" class="btn">New</button>
+          <input id="search" type="text" placeholder="Search" />
+        </div>
+        <div id="list" class="list"></div>
+      </aside>
+
+      <main class="panel">
+        <input id="title" type="text" placeholder="Title" />
+        <div style="height:8px"></div>
+        <textarea id="body" placeholder="Note"></textarea>
+        <div>
+          <button id="saveBtn" class="btn">Save</button>
+          <button id="deleteBtn" class="ghost">Delete</button>
+          <button id="exportBtn" class="ghost">Export</button>
+          <button id="importBtn" class="ghost">Import</button>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
